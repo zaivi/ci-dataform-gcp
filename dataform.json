@@ -1,12 +1,11 @@
 {
-  "defaultSchema": "dev_dl_test",
-  "assertionSchema": "dev_dl_test",
-  "warehouse": "bigquery",
-  "defaultDatabase": "ext-pinetree-dw",
-  "defaultLocation": "asia-southeast1",
-  "vars": {
-      "start_date": "20220401",
-      "end_date": "20220401"
-  }
+    "defaultSchema": "giai_test",
+    "assertionSchema": "giai_test",
+    "warehouse": "bigquery",
+    "defaultDatabase": "int-data-department",
+    "defaultLocation": "asia-southeast1",
+    "vars": {
+        "start_date": "20220401",
+        "end_date": "20220401"
+    }
 }
-    
