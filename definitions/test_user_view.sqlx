@@ -1,6 +1,6 @@
 config {
   type: "test",
-  dataset: "age_view"
+  dataset: "user_view"
 }
 
 input "USERS" {
