@@ -1,0 +1,16 @@
+config {
+  type: "test",
+  dataset: "age_view"
+}
+
+input "USERS" {
+  SELECT 1 AS LEVEL UNION ALL
+  SELECT 2 AS LEVEL UNION ALL
+  SELECT 3 AS LEVEL UNION ALL
+  SELECT 4 AS LEVEL
+}
+
+SELECT 1 AS agg_col, 1 AS col_count UNION ALL
+SELECT 2 AS agg_col, 1 AS col_count UNION ALL
+SELECT 3 AS agg_col, 1 AS col_count UNION ALL
+SELECT 4 AS agg_col, 1 AS col_count

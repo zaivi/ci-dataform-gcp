@@ -1,0 +1,7 @@
+{
+  "name": "pinetree_centralized_data",
+  "dependencies": {
+    "@dataform/core": "2.0.1",
+    "package.json": "^2.0.1"
+  }
+}

@@ -1,0 +1,10 @@
+config {
+  type: "view",
+  name: "age_view"
+}
+
+SELECT
+  FLOOR(cast(LEVEL as int64) / 5) * 5 AS agg_col,
+  COUNT(1) AS col_count
+FROM ${ref("USERS")}
+GROUP BY agg_col
