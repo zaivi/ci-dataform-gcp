@@ -4,13 +4,13 @@ config {
 }
 
 input "USERS" {
-  SELECT 1 AS LEVEL UNION ALL
-  SELECT 2 AS LEVEL UNION ALL
-  SELECT 3 AS LEVEL UNION ALL
-  SELECT 4 AS LEVEL
+  SELECT 10 AS LEVEL UNION ALL
+  SELECT 20 AS LEVEL UNION ALL
+  SELECT 30 AS LEVEL UNION ALL
+  SELECT 40 AS LEVEL
 }
 
-SELECT 1 AS agg_col, 1 AS col_count UNION ALL
-SELECT 2 AS agg_col, 1 AS col_count UNION ALL
-SELECT 3 AS agg_col, 1 AS col_count UNION ALL
-SELECT 4 AS agg_col, 1 AS col_count
+SELECT 10 AS agg_col, 1 AS col_count UNION ALL
+SELECT 20 AS agg_col, 1 AS col_count UNION ALL
+SELECT 30 AS agg_col, 1 AS col_count UNION ALL
+SELECT 40 AS agg_col, 1 AS col_count
