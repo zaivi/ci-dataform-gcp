@@ -18,6 +18,7 @@ jobs:
 
             - name: Run uptime
               run: |
+                  touch .github/uptime.log           
                   date > .github/uptime.log
 
                   echo "cat uptime.log"
