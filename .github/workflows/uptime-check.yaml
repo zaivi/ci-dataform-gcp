@@ -1,8 +1,8 @@
 name: Uptime check
 
 on:
-    push:
-        branches: ["development"]
+    # push:
+    #     branches: ["development"]
     issue_comment:
         types: [created]
     schedule:
