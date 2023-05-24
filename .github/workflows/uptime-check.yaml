@@ -31,7 +31,7 @@ jobs:
 
             - name: Commit changes
               run: |
-                  git config --global user.name zaibot
+                  git config --global user.name zaivibot
                   git config --global user.email 134474975+zaivibot@users.noreply.github.com 
                   git add uptime.log
                   git commit -am "[bot]: Uptime check run"
