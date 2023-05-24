@@ -6,7 +6,7 @@ on:
     issue_comment:
         types: [created]
     schedule:
-        - cron: "*/15 * * * *"
+        - cron: "0 * * * *"
 
 jobs:
     uptime-check:
