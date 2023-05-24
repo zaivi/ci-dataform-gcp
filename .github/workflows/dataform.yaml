@@ -1,4 +1,4 @@
-name: CI
+name: CI validation check
 
 on:
     push:

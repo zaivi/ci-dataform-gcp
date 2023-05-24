@@ -1,0 +1,35 @@
+name: Uptime check
+
+on:
+    push:
+        branches: ["development"]
+    issue_comment:
+        types: [created]
+    schedule:
+        - cron: "* 1 * * *"
+
+jobs:
+    uptime-check:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Run uptime
+              run: |
+                  touch uptime.log
+                  date >> uptime.log
+
+                  echo "cat uptime.log"
+                  cat uptime.log
+
+                  echo "ls -a ."
+                  ls -a .
+
+              shell: bash
+
+            - name: Commit changes
+              run: |
+                  git config --global user.name zaibot
+                  git config --global user.email 134474975+zaivibot@users.noreply.github.com 
+                  git add uptime.log
+                  git commit -am "[bot]: Uptime check run"
+                  git push
